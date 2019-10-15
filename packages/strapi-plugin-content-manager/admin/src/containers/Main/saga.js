@@ -17,6 +17,7 @@ const createPossibleMainFieldsForModelsAndGroups = array => {
         'boolean',
         'group',
         'json',
+        'tags',
         'media',
         'password',
         'relation',

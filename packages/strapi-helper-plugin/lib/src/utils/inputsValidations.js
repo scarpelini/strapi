@@ -50,7 +50,7 @@ const validateInput = (value, inputValidations = {}, type = 'text') => {
         }
         break;
       case 'type':
-        if (validationValue === 'json') {
+        if (validationValue === 'json' || validationValue === 'tags') {
           try {
             value = JSON.parse(value);
           } catch (err) {

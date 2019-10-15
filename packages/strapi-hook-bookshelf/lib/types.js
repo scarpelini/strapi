@@ -2,6 +2,7 @@ const types = {
   UUID: 'uuid',
   TEXT: 'text',
   JSON: 'json',
+  TAGS: 'tags',
   STRING: 'string',
   ENUM: 'enumeration',
   PASSWORD: 'password',

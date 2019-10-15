@@ -393,6 +393,7 @@ const getType = ({ definition, attribute, name, tableExists = false }) => {
     case 'text':
       return client === 'pg' ? 'text' : 'longtext';
     case 'json':
+    case 'tags':
       return client === 'pg' ? 'jsonb' : 'longtext';
     case 'string':
     case 'enumeration':

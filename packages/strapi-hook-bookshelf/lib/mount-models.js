@@ -782,7 +782,7 @@ module.exports = ({ models, target, plugin = false }, ctx) => {
 
               if (attributes[key] === null) return;
 
-              if (attr.type === 'json') {
+              if (attr.type === 'json' || attr.type === 'tags') {
                 attributes[key] = JSON.parse(attributes[key]);
               }
 
@@ -887,12 +887,13 @@ module.exports = ({ models, target, plugin = false }, ctx) => {
   return Promise.all(updates);
 };
 
-const castValueFromType = (type, value, /* definition */) => {
+const castValueFromType = (type, value /* definition */) => {
   // do not cast null values
   if (value === null) return null;
 
   switch (type) {
     case 'json':
+    case 'tags':
       return JSON.stringify(value);
     // TODO: handle real date format 1970-01-01
     // TODO: handle real time format 12:00:00

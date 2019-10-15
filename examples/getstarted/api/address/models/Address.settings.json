@@ -28,6 +28,9 @@
     },
     "country": {
       "model": "country"
+    },
+    "tags": {
+      "type": "tags"
     }
   }
 }

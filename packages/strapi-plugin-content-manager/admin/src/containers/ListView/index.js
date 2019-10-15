@@ -132,7 +132,7 @@ function ListView({
       Object.keys(getMetaDatas())
         .filter(
           key =>
-            !['json', 'group', 'relation', 'richtext'].includes(
+            !['json', 'tags', 'group', 'relation', 'richtext'].includes(
               get(layouts, [slug, 'schema', 'attributes', key, 'type'], '')
             )
         )

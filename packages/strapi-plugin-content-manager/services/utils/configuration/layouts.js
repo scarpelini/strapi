@@ -22,6 +22,7 @@ const typeToSize = type => {
     case 'number':
       return MAX_ROW_SIZE / 3;
     case 'json':
+    case 'tags':
     case 'group':
     case 'richtext':
       return MAX_ROW_SIZE;

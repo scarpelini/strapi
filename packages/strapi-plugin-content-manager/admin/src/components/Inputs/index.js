@@ -6,6 +6,7 @@ import { InputsIndex } from 'strapi-helper-plugin';
 import { useEditView } from '../../contexts/EditView';
 import InputJSONWithErrors from '../InputJSONWithErrors';
 import WysiwygWithErrors from '../WysiwygWithErrors';
+import TagsWithErrors from '../TagsWithErrors';
 
 const getInputType = (type = '') => {
   switch (type.toLowerCase()) {
@@ -35,6 +36,8 @@ const getInputType = (type = '') => {
       return 'file';
     case 'json':
       return 'json';
+    case 'tags':
+      return 'tags';
     case 'wysiwyg':
     case 'WYSIWYG':
     case 'richtext':
@@ -97,6 +100,7 @@ function Inputs({
       customInputs={{
         json: InputJSONWithErrors,
         wysiwyg: WysiwygWithErrors,
+        tags: TagsWithErrors,
       }}
       multiple={get(attribute, 'multiple', false)}
       name={name}

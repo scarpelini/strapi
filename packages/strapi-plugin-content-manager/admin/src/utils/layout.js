@@ -81,6 +81,7 @@ const getInputSize = type => {
     case 'decimal':
       return 4;
     case 'json':
+    case 'tags':
     case 'group':
     case 'richtext':
       return 12;

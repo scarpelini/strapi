@@ -19,6 +19,7 @@ export const cleanData = (retrievedData, ctLayout, groupLayouts) => {
 
       switch (attrType) {
         case 'json':
+        case 'tags':
           cleanedData = value;
           break;
         case 'date':
