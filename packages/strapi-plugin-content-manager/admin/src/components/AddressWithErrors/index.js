@@ -29,9 +29,6 @@ class AddressWithErrors extends React.Component {
   componentDidMount() {
     const { value, errors } = this.props;
 
-    console.log('[AddressWithErrors] value=', value);
-    console.log('[AddressWithErrors] errors=', errors);
-
     // Prevent the input from displaying an error when the user enters and leaves without filling it
     if (!isEmpty(value)) {
       this.setState({ hasInitialValue: true });
@@ -225,11 +222,12 @@ AddressWithErrors.propTypes = {
   style: PropTypes.object,
   tabIndex: PropTypes.string,
   validations: PropTypes.object,
-  value: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.object,
-    PropTypes.bool,
-  ]),
+  value: PropTypes.any,
+  // value: PropTypes.oneOfType([
+  //   PropTypes.array,
+  //   PropTypes.object,
+  //   PropTypes.bool,
+  // ]),
 };
 
 export default AddressWithErrors;
