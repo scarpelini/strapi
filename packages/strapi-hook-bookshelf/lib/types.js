@@ -4,6 +4,7 @@ const types = {
   JSON: 'json',
   TAGS: 'tags',
   ADDRESS: 'address',
+  OPENINGHOURS: 'openinghours',
   STRING: 'string',
   ENUM: 'enumeration',
   PASSWORD: 'password',

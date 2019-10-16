@@ -24,6 +24,7 @@ const typeToSize = type => {
     case 'json':
     case 'tags':
     case 'address':
+    case 'openinghours':
     case 'group':
     case 'richtext':
       return MAX_ROW_SIZE;

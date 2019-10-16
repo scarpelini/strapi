@@ -1,0 +1,73 @@
+[
+  {
+    "weekday": 0,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  },
+  {
+    "weekday": 1,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  },
+  {
+    "weekday": 2,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  },
+  {
+    "weekday": 3,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  },
+  {
+    "weekday": 4,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  },
+  {
+    "weekday": 5,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  },
+  {
+    "weekday": 6,
+    "opened": true,
+    "timeRange": [
+      {
+        "from": "10:00:00",
+        "to": "22:00:00"
+      }
+    ]
+  }
+]
+

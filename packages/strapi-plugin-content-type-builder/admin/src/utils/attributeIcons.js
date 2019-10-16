@@ -13,6 +13,7 @@ import string from '../assets/icons/attributes/icon_string.png';
 import text from '../assets/icons/attributes/icon_text.png';
 import tags from '../assets/icons/attributes/icon_tags.png';
 import address from '../assets/icons/attributes/icon_address.png';
+import openinghours from '../assets/icons/attributes/icon_openinghours.png';
 
 const attributeIcons = {
   boolean,
@@ -30,6 +31,7 @@ const attributeIcons = {
   text,
   tags,
   address,
+  openinghours,
 };
 
 export default attributeIcons;

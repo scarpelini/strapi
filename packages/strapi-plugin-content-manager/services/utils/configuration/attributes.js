@@ -2,12 +2,21 @@
 
 const _ = require('lodash');
 
-const NON_SORTABLES = ['group', 'json', 'tags', 'address', 'relation', 'media'];
+const NON_SORTABLES = [
+  'group',
+  'json',
+  'tags',
+  'address',
+  'openinghours',
+  'relation',
+  'media',
+];
 const NON_LISTABLES = [
   'group',
   'json',
   'tags',
   'address',
+  'openinghours',
   'relation',
   'password',
 ];

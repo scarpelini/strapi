@@ -53,7 +53,8 @@ const validateInput = (value, inputValidations = {}, type = 'text') => {
         if (
           validationValue === 'json' ||
           validationValue === 'tags' ||
-          validationValue === 'address'
+          validationValue === 'address' ||
+          validationValue === 'openinghours'
         ) {
           try {
             value = JSON.parse(value);

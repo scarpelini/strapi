@@ -8,6 +8,7 @@ import InputJSONWithErrors from '../InputJSONWithErrors';
 import WysiwygWithErrors from '../WysiwygWithErrors';
 import TagsWithErrors from '../TagsWithErrors';
 import AddressWithErrors from '../AddressWithErrors';
+import OpeningHoursWithErrors from '../OpeningHoursWithErrors';
 
 const getInputType = (type = '') => {
   switch (type.toLowerCase()) {
@@ -41,6 +42,8 @@ const getInputType = (type = '') => {
       return 'tags';
     case 'address':
       return 'address';
+    case 'openinghours':
+      return 'openinghours';
     case 'wysiwyg':
     case 'WYSIWYG':
     case 'richtext':
@@ -105,6 +108,7 @@ function Inputs({
         wysiwyg: WysiwygWithErrors,
         tags: TagsWithErrors,
         address: AddressWithErrors,
+        openinghours: OpeningHoursWithErrors,
       }}
       multiple={get(attribute, 'multiple', false)}
       name={name}

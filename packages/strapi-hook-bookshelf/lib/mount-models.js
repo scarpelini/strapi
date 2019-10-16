@@ -785,7 +785,8 @@ module.exports = ({ models, target, plugin = false }, ctx) => {
               if (
                 attr.type === 'json' ||
                 attr.type === 'tags' ||
-                attr.type === 'address'
+                attr.type === 'address' ||
+                attr.type === 'openinghours'
               ) {
                 attributes[key] = JSON.parse(attributes[key]);
               }
@@ -899,6 +900,7 @@ const castValueFromType = (type, value /* definition */) => {
     case 'json':
     case 'tags':
     case 'address':
+    case 'openinghours':
       return JSON.stringify(value);
     // TODO: handle real date format 1970-01-01
     // TODO: handle real time format 12:00:00
