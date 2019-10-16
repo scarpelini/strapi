@@ -4,10 +4,13 @@ import styled from 'styled-components';
 import { TimePicker as StyledTimePicker } from '@buffetjs/core';
 import { Label } from './';
 
-const TimePickerWrapper = styled.span`
+const TimePickerWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  > div {
+    z-index: auto;
+  }
 `;
 
 const ExtendedLabel = styled(Label)`
@@ -20,10 +23,10 @@ const TimePicker = props => {
     <TimePickerWrapper>
       <ExtendedLabel>{props.label}</ExtendedLabel>
       <StyledTimePicker
-        name="time"
+        name={props.label}
         value={props.value}
         seconds={false}
-        {...props}
+        onChange={props.onChange}
       />
     </TimePickerWrapper>
   );
@@ -32,6 +35,7 @@ const TimePicker = props => {
 TimePicker.propTypes = {
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
 };
 
 export default TimePicker;
