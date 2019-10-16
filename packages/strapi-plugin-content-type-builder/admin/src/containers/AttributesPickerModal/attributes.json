@@ -54,5 +54,9 @@
   {
     "type": "tags",
     "description": "content-type-builder.popUpForm.attributes.tags.description"
+  },
+  {
+    "type": "address",
+    "description": "content-type-builder.popUpForm.attributes.address.description"
   }
 ]

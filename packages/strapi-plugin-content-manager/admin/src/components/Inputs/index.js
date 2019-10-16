@@ -7,6 +7,7 @@ import { useEditView } from '../../contexts/EditView';
 import InputJSONWithErrors from '../InputJSONWithErrors';
 import WysiwygWithErrors from '../WysiwygWithErrors';
 import TagsWithErrors from '../TagsWithErrors';
+import AddressWithErrors from '../AddressWithErrors';
 
 const getInputType = (type = '') => {
   switch (type.toLowerCase()) {
@@ -38,6 +39,8 @@ const getInputType = (type = '') => {
       return 'json';
     case 'tags':
       return 'tags';
+    case 'address':
+      return 'address';
     case 'wysiwyg':
     case 'WYSIWYG':
     case 'richtext':
@@ -101,6 +104,7 @@ function Inputs({
         json: InputJSONWithErrors,
         wysiwyg: WysiwygWithErrors,
         tags: TagsWithErrors,
+        address: AddressWithErrors,
       }}
       multiple={get(attribute, 'multiple', false)}
       name={name}

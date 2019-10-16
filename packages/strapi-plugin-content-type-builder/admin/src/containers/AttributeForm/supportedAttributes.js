@@ -1009,6 +1009,61 @@ const attributes = {
       ],
     },
   },
+  address: {
+    base: {
+      items: [
+        {
+          inputDescription: {
+            id: 'content-type-builder.form.attribute.info.no-space-allowed',
+          },
+          label: {
+            id: 'content-type-builder.form.attribute.item.string.name',
+          },
+          name: 'name',
+          type: 'string',
+          defaultValue: '',
+          validations: {
+            required: true,
+          },
+        },
+      ],
+    },
+    advanced: {
+      items: [
+        {
+          title: {
+            id: 'content-type-builder.form.attribute.item.settings.name',
+          },
+          customBootstrapClass: 'col-md-12',
+          label: {
+            id: 'content-type-builder.form.attribute.item.requiredField',
+          },
+          name: 'required',
+          type: 'checkbox',
+          value: false,
+          validations: {},
+          inputDescription: {
+            id:
+              'content-type-builder.form.attribute.item.requiredField.description',
+          },
+        },
+        {
+          label: {
+            id: 'content-type-builder.form.attribute.item.uniqueField',
+          },
+          name: 'unique',
+          type: 'checkbox',
+          customBootstrapClass: 'col-md-12',
+          value: false,
+          validations: {},
+          inputDescription: {
+            id:
+              'content-type-builder.form.attribute.item.uniqueField.description',
+          },
+        },
+      ],
+    },
+  },
 };
 
 export default attributes;

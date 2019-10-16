@@ -95,7 +95,7 @@ const createYupSchemaAttribute = (type, validations) => {
   ) {
     schema = yup.string();
   }
-  if (type === 'json' || type === 'tags') {
+  if (type === 'json' || type === 'tags' || type === 'address') {
     schema = yup
       .mixed(errorsTrads.json)
       .test('isJSON', errorsTrads.json, value => {

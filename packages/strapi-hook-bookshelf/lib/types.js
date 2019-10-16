@@ -3,6 +3,7 @@ const types = {
   TEXT: 'text',
   JSON: 'json',
   TAGS: 'tags',
+  ADDRESS: 'address',
   STRING: 'string',
   ENUM: 'enumeration',
   PASSWORD: 'password',

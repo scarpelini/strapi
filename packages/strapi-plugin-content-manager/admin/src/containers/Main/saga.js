@@ -18,6 +18,7 @@ const createPossibleMainFieldsForModelsAndGroups = array => {
         'group',
         'json',
         'tags',
+        'address',
         'media',
         'password',
         'relation',

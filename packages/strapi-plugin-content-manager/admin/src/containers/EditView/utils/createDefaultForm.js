@@ -11,11 +11,14 @@ const setDefaultForm = attributes => {
       repeatable,
     } = attribute;
 
-    if (type === 'json' || type === 'tags') {
+    if (type === 'json' || type === 'tags' || type === 'address') {
       acc[current] = null;
     }
 
-    if ((type === 'json' || type === 'tags') && required === true) {
+    if (
+      (type === 'json' || type === 'tags' || type === 'address') &&
+      required === true
+    ) {
       acc[current] = {};
     }
 

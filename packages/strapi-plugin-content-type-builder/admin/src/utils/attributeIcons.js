@@ -12,6 +12,7 @@ import richtext from '../assets/icons/attributes/icon_text.png';
 import string from '../assets/icons/attributes/icon_string.png';
 import text from '../assets/icons/attributes/icon_text.png';
 import tags from '../assets/icons/attributes/icon_tags.png';
+import address from '../assets/icons/attributes/icon_address.png';
 
 const attributeIcons = {
   boolean,
@@ -28,6 +29,7 @@ const attributeIcons = {
   string,
   text,
   tags,
+  address,
 };
 
 export default attributeIcons;

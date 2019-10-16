@@ -1,0 +1,13 @@
+{
+  "street": "",
+  "number": "",
+  "country": "",
+  "zip_code": "",
+  "neighborhood": "",
+  "city": "",
+  "state": "",
+  "geolocation": {
+    "lat": 0,
+    "lng": 0
+  }
+}

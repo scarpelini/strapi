@@ -223,6 +223,7 @@ function SettingViewGroup({
         ![
           'json',
           'tags',
+          'address',
           'text',
           'relation',
           'group',
