@@ -52,6 +52,11 @@ class Address extends React.PureComponent {
   }
 
   componentDidMount() {
+    if (!process.env.GOOGLE_MAPS_API_KEY) {
+      console.log(
+        "Please, configure the environment variable 'GOOGLE_MAPS_API_KEY'"
+      );
+    }
     this.notifyChanges();
   }
 
