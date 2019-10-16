@@ -21,7 +21,7 @@ const Toggle = props => {
     <Wrapper>
       <Label>{props.label}</Label>
       <StyledToggle
-        name="toggle"
+        name={props.label}
         value={props.value}
         onChange={({ target: { value } }) => {
           props.onChange(value);
