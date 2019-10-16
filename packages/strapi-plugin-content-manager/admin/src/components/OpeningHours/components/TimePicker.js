@@ -57,7 +57,6 @@ const TimePicker = props => {
   const wrapperRef = useRef();
 
   const updateTime = time => {
-    console.log('updateTime | time=', time);
     onChange({
       target: {
         name,
