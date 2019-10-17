@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-content-type-builder",
+  "name": "@solidsolutions/strapi-plugin-content-type-builder",
   "version": "3.0.0-beta.16.8",
   "description": "Strapi plugin to create content type (API).",
   "strapi": {
@@ -48,7 +48,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/strapi/strapi.git"
+    "url": "git@github.com:scarpelini/strapi.git"
   },
   "engines": {
     "node": ">=10.0.0",

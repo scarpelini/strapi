@@ -1,5 +1,3 @@
-import pluginPkg from '../../package.json';
-
-const pluginId = pluginPkg.name.replace(/^strapi-plugin-/i, '');
+const pluginId = 'content-type-builder';
 
 export default pluginId;
