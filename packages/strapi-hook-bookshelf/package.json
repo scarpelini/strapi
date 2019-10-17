@@ -1,5 +1,5 @@
 {
-  "name": "strapi-hook-bookshelf",
+  "name": "@solidsolutions/strapi-hook-bookshelf",
   "version": "3.0.0-beta.16.8",
   "description": "Bookshelf hook for the Strapi framework",
   "homepage": "http://strapi.io",
@@ -47,7 +47,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/strapi/strapi.git"
+    "url": "git@github.com:scarpelini/strapi.git"
   },
   "bugs": {
     "url": "https://github.com/strapi/strapi/issues"
