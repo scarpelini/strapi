@@ -1,5 +1,5 @@
 {
-  "name": "strapi-hook-mongoose",
+  "name": "@solidsolutions/strapi-hook-mongoose",
   "version": "3.0.0-beta.16.8",
   "description": "Mongoose hook for the Strapi framework",
   "homepage": "http://strapi.io",
@@ -36,7 +36,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/strapi/strapi.git"
+    "url": "git@github.com:scarpelini/strapi.git"
   },
   "bugs": {
     "url": "https://github.com/strapi/strapi/issues"
