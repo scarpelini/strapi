@@ -5,12 +5,8 @@ import ReactGoogleMapLoader from 'react-google-maps-loader';
 import ReactGooglePlacesSuggest from 'react-google-places-suggest';
 import { Wrapper, MapWrapper, Marker, InputText } from './components';
 import { intersection, isEmpty, isObject, isEqual, isFunction } from 'lodash';
+import config from './config/config.json';
 import defaultValue from './defaultValue.json';
-
-const DEFAULT_LOCATION = {
-  lat: -23.561637,
-  lng: -46.65613,
-};
 
 const keyCodes = {
   enter: 13,
@@ -52,11 +48,7 @@ class Address extends React.PureComponent {
   }
 
   componentDidMount() {
-    if (!process.env.GOOGLE_MAPS_API_KEY) {
-      console.log(
-        "Please, configure the environment variable 'GOOGLE_MAPS_API_KEY'"
-      );
-    }
+    console.log('config=', config);
     this.notifyChanges();
   }
 
@@ -176,8 +168,8 @@ class Address extends React.PureComponent {
     const { geolocation } = this.state.draftValue;
     return (
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API_KEY }}
-        defaultCenter={DEFAULT_LOCATION}
+        bootstrapURLKeys={{ key: config.apiKey }}
+        defaultCenter={config.defaultLocation}
         defaultZoom={14}
         center={geolocation}
         options={{
@@ -227,7 +219,7 @@ class Address extends React.PureComponent {
         <MapWrapper>
           <ReactGoogleMapLoader
             params={{
-              key: process.env.GOOGLE_MAPS_API_KEY,
+              key: config.apiKey,
               libraries: 'places',
             }}
             render={googleMaps =>
