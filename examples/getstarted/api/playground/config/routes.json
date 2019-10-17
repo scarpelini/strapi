@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/playgrounds",
+      "handler": "Playground.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playgrounds/count",
+      "handler": "Playground.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playgrounds/:id",
+      "handler": "Playground.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/playgrounds",
+      "handler": "Playground.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/playgrounds/:id",
+      "handler": "Playground.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/playgrounds/:id",
+      "handler": "Playground.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

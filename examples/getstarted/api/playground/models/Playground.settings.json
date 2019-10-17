@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "playgrounds",
+  "info": {
+    "name": "playground",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "opening_hours": {
+      "type": "openinghours"
+    },
+    "tags": {
+      "type": "tags"
+    },
+    "address": {
+      "type": "address"
+    }
+  }
+}
